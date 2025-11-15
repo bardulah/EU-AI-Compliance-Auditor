@@ -1,0 +1,12 @@
+# TalentMatch AI Requirements
+# NON-COMPLIANCE: Outdated dependencies with known vulnerabilities
+
+numpy==1.19.5  # VULNERABLE: Known security issues in this old version
+pandas==1.1.5  # VULNERABLE: Old version
+scikit-learn==0.23.2  # VULNERABLE: Old version
+flask==1.1.2  # VULNERABLE: Known security vulnerabilities
+pickle5==0.0.11
+
+# Missing: Security scanning, dependency verification
+# Missing: Explicit versions for all transitive dependencies
+# Missing: Cryptographic signature verification
