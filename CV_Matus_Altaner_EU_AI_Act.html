@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Matúš Altaner | EU AI Act Compliance Specialist</title>
+    <style>
+        /* 2025 CV Best Practices - Clean, ATS-Friendly, Single Column */
+        @page {
+            size: A4;
+            margin: 1.8cm 2cm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.45;
+            color: #1a1a1a;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 1.8cm 2cm;
+            background: white;
+        }
+
+        /* Header - Clean, Professional */
+        .header {
+            text-align: center;
+            margin-bottom: 1.2em;
+            padding-bottom: 1em;
+            border-bottom: 2px solid #1a1a1a;
+        }
+
+        .name {
+            font-size: 22pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.2em;
+        }
+
+        .title {
+            font-size: 11pt;
+            color: #444;
+            font-weight: 500;
+            margin-bottom: 0.6em;
+        }
+
+        .contact-line {
+            font-size: 9.5pt;
+            color: #333;
+        }
+
+        .contact-line a {
+            color: #0066CC;
+            text-decoration: none;
+        }
+
+        .contact-line span {
+            margin: 0 0.4em;
+            color: #999;
+        }
+
+        /* Section Headers */
+        h2 {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 1.3em;
+            margin-bottom: 0.6em;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Professional Summary */
+        .summary {
+            text-align: justify;
+            margin-bottom: 0.5em;
+            line-height: 1.5;
+        }
+
+        /* Key Metrics Bar */
+        .metrics-bar {
+            display: flex;
+            justify-content: space-between;
+            background: #f5f5f5;
+            padding: 0.8em 1em;
+            margin: 0.8em 0 0.5em 0;
+            border-left: 3px solid #0066CC;
+        }
+
+        .metric {
+            text-align: center;
+            flex: 1;
+        }
+
+        .metric-value {
+            font-size: 14pt;
+            font-weight: 700;
+            color: #0066CC;
+            display: block;
+        }
+
+        .metric-label {
+            font-size: 8pt;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        /* Experience */
+        .experience-item {
+            margin-bottom: 1.1em;
+            page-break-inside: avoid;
+        }
+
+        .job-header {
+            margin-bottom: 0.3em;
+        }
+
+        .job-title-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 10.5pt;
+            color: #1a1a1a;
+        }
+
+        .job-date {
+            font-size: 9.5pt;
+            color: #666;
+        }
+
+        .company {
+            font-size: 10pt;
+            color: #444;
+            font-style: italic;
+        }
+
+        /* Lists */
+        ul {
+            margin-left: 1.3em;
+            margin-top: 0.3em;
+        }
+
+        li {
+            margin-bottom: 0.2em;
+            line-height: 1.4;
+        }
+
+        li::marker {
+            color: #0066CC;
+        }
+
+        /* Skills Grid */
+        .skills-section {
+            margin-bottom: 0.5em;
+        }
+
+        .skill-category {
+            margin-bottom: 0.6em;
+        }
+
+        .skill-category-title {
+            font-weight: 700;
+            font-size: 10pt;
+            color: #333;
+            margin-bottom: 0.15em;
+        }
+
+        .skill-list {
+            font-size: 10pt;
+            color: #444;
+            line-height: 1.4;
+        }
+
+        /* Two Column Layout for Skills */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8em 1.5em;
+        }
+
+        /* Certifications */
+        .cert-item {
+            margin-bottom: 0.3em;
+        }
+
+        .cert-name {
+            font-weight: 600;
+        }
+
+        .cert-issuer {
+            color: #666;
+            font-size: 9.5pt;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 0.6em;
+        }
+
+        .edu-degree {
+            font-weight: 700;
+        }
+
+        .edu-school {
+            color: #444;
+        }
+
+        .edu-date {
+            color: #666;
+            font-size: 9.5pt;
+        }
+
+        /* Languages */
+        .languages {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5em;
+        }
+
+        .lang-item strong {
+            color: #333;
+        }
+
+        /* Print Optimization */
+        @media print {
+            body {
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .metrics-bar {
+                background: #f5f5f5 !important;
+            }
+
+            a {
+                color: #0066CC !important;
+            }
+        }
+
+        /* Page Break Control */
+        .page-break-before {
+            page-break-before: always;
+        }
+
+        .no-break {
+            page-break-inside: avoid;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="name">MATÚŠ ALTANER</div>
+    <div class="title">EU AI Act Compliance Specialist | Operations & Regulatory Affairs</div>
+    <div class="contact-line">
+        <a href="mailto:matusaltaner@gmail.com">matusaltaner@gmail.com</a>
+        <span>|</span>
+        +421 950 417 644
+        <span>|</span>
+        Bratislava, Slovakia
+        <span>|</span>
+        <a href="https://www.linkedin.com/in/janeviem/">linkedin.com/in/janeviem</a>
+    </div>
+</header>
+
+<!-- PROFESSIONAL SUMMARY -->
+<section>
+    <h2>Professional Summary</h2>
+    <p class="summary">
+        EU AI Act compliance specialist with demonstrated expertise in Regulation (EU) 2024/1689 implementation for high-risk AI systems. Recently completed comprehensive compliance audit project identifying 24 violations across 10 regulatory domains, quantifying €15M+ risk exposure, and developing actionable remediation roadmaps. Background in operations management (7+ years) provides strong foundation in documentation systems, quality assurance, process optimization, and cross-functional coordination. Certified in AI/ML fundamentals, Python programming, and data analytics. Seeking to leverage analytical skills and regulatory knowledge in AI compliance, governance, or risk management roles.
+    </p>
+
+    <!-- Key Metrics -->
+    <div class="metrics-bar">
+        <div class="metric">
+            <span class="metric-value">24</span>
+            <span class="metric-label">Issues Identified</span>
+        </div>
+        <div class="metric">
+            <span class="metric-value">10</span>
+            <span class="metric-label">Domains Analyzed</span>
+        </div>
+        <div class="metric">
+            <span class="metric-value">€15M</span>
+            <span class="metric-label">Risk Quantified</span>
+        </div>
+        <div class="metric">
+            <span class="metric-value">40,600+</span>
+            <span class="metric-label">Words Research</span>
+        </div>
+    </div>
+</section>
+
+<!-- CORE COMPETENCIES -->
+<section>
+    <h2>Core Competencies</h2>
+    <div class="two-column">
+        <div class="skill-category">
+            <div class="skill-category-title">EU AI Act & Compliance</div>
+            <div class="skill-list">Regulation 2024/1689 Implementation, High-Risk System Requirements, Risk Management (Article 9), Data Governance (Article 10), Conformity Assessment (Articles 43-49), Quality Management Systems (Article 17), Technical Documentation (Annex IV)</div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-category-title">Technical Auditing</div>
+            <div class="skill-list">Compliance Gap Analysis, Code Review Methodology, Evidence-Based Reporting, Remediation Planning, Cybersecurity Assessment, Human Oversight Validation, Post-Market Monitoring</div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-category-title">Operations & Process</div>
+            <div class="skill-list">Documentation Management, Quality Assurance, Process Optimization, Inventory Control, Supply Chain Coordination, Stakeholder Communication, Cross-Functional Collaboration</div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-category-title">Technical Skills</div>
+            <div class="skill-list">Python Programming, Pandas Data Analysis, Machine Learning Fundamentals, Google Analytics, Microsoft Excel Advanced, CMS Administration, Database Management</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROFESSIONAL EXPERIENCE -->
+<section>
+    <h2>Professional Experience</h2>
+
+    <!-- EUAICA Project -->
+    <div class="experience-item">
+        <div class="job-header">
+            <div class="job-title-line">
+                <span class="job-title">Lead Compliance Auditor & Research Analyst</span>
+                <span class="job-date">2025</span>
+            </div>
+            <div class="company">EUAICA Project (EU AI Act Compliance Auditor) — Portfolio Project</div>
+        </div>
+        <ul>
+            <li>Conducted comprehensive EU AI Act compliance assessment for high-risk AI recruitment system (Annex III, Point 4), synthesizing 15+ articles into 40,600+ words of actionable implementation guidance across 10 regulatory domains</li>
+            <li>Executed systematic line-by-line technical audit of 12-file enterprise codebase (3,000+ lines), identifying 24 compliance violations: 9 critical market-blocking issues and 15 minor deficiencies with evidence-based findings</li>
+            <li>Quantified potential administrative fines up to €15,000,000 (3% worldwide turnover) per Article 99, enabling informed risk mitigation decisions for organizational leadership</li>
+            <li>Identified critical violations in Post-Market Monitoring (Article 72), Human Oversight (Article 14), Data Governance (Article 10), Cybersecurity (Article 15), and Risk Management (Article 9)</li>
+            <li>Designed 3-phase remediation roadmap with 6-12 month timeline, prioritizing critical fixes for legal market placement followed by robust compliance improvements and conformity assessment preparation</li>
+            <li>Produced professional audit report (15,000 words) suitable for executive leadership, legal counsel, and regulatory authorities, including compliance scorecard with Pass/Fail/Partial status across all domains</li>
+            <li>Demonstrated compliance fixes achieving 35% → 50% improvement, with full traceability from violations to specific EU AI Act articles and technical implementation failures</li>
+        </ul>
+    </div>
+
+    <!-- FASHIONMAN -->
+    <div class="experience-item">
+        <div class="job-header">
+            <div class="job-title-line">
+                <span class="job-title">Operations & Compliance Coordinator</span>
+                <span class="job-date">June 2018 – Present</span>
+            </div>
+            <div class="company">FASHIONMAN INTERNATIONAL, s.r.o. — Bratislava, Slovakia</div>
+        </div>
+        <ul>
+            <li>Managed end-to-end logistics operations for fashion retail company over 7+ years, ensuring systematic documentation, quality control, and process compliance across all operational areas</li>
+            <li>Optimized inventory management processes through comprehensive record-keeping systems, conducting regular stock assessments and maintaining accurate financial documentation</li>
+            <li>Coordinated multi-channel order fulfillment with high accuracy rates, implementing process improvements that enhanced operational efficiency and reduced discrepancies</li>
+            <li>Maintained quality assurance standards through systematic inspection procedures for incoming shipments, ensuring compliance with internal protocols and customer requirements</li>
+            <li>Collaborated effectively with suppliers, logistics partners (including German-speaking), and internal departments, demonstrating cross-functional communication skills essential for regulatory coordination</li>
+            <li>Managed invoicing systems and CMS administration, uploading and organizing product content with attention to accuracy and completeness</li>
+        </ul>
+    </div>
+
+    <!-- Fincentrum -->
+    <div class="experience-item">
+        <div class="job-header">
+            <div class="job-title-line">
+                <span class="job-title">Operations Assistant</span>
+                <span class="job-date">Sept 2016 – Aug 2017</span>
+            </div>
+            <div class="company">Fincentrum a.s. — Bratislava, Slovakia</div>
+        </div>
+        <ul>
+            <li>Managed warehouse operations, inventory coordination, and client communications ensuring service quality standards</li>
+            <li>Processed customer offers, orders, and invoicing with attention to detail and documentation accuracy</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-header">
+            <div class="job-title-line">
+                <span class="job-title">Administrative Assistant</span>
+                <span class="job-date">Mar 2014 – Aug 2016</span>
+            </div>
+            <div class="company">Fincentrum a.s. — Bratislava, Slovakia</div>
+        </div>
+        <ul>
+            <li>Provided comprehensive office administration support, maintaining organized filing systems and documentation</li>
+            <li>Assisted with various administrative projects requiring analytical attention and systematic organization</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="no-break">
+    <h2>Certifications & Professional Development</h2>
+
+    <div class="skill-category">
+        <div class="skill-category-title">EU AI Act & Regulatory</div>
+        <div class="cert-item">
+            <span class="cert-name">EU AI Act Implementation Specialization</span> —
+            <span class="cert-issuer">EUAICA Project (2025) | Comprehensive study of Regulation (EU) 2024/1689</span>
+        </div>
+    </div>
+
+    <div class="skill-category">
+        <div class="skill-category-title">Artificial Intelligence & Machine Learning</div>
+        <div class="cert-item">
+            <span class="cert-name">Elements of AI</span> —
+            <span class="cert-issuer">University of Helsinki (Sept 2025) | 2 ECTS credits</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-name">LLM Fundamentals Course</span> —
+            <span class="cert-issuer">Hugging Face (Sept 2025)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-name">Intro to Machine Learning</span> —
+            <span class="cert-issuer">Kaggle (Sept 2025)</span>
+        </div>
+    </div>
+
+    <div class="skill-category">
+        <div class="skill-category-title">Data Analytics & Programming</div>
+        <div class="cert-item">
+            <span class="cert-name">Google Analytics Certification</span> —
+            <span class="cert-issuer">Google Skillshop (Sept 2025)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-name">100 Days of Code: Python Pro Bootcamp</span> —
+            <span class="cert-issuer">Udemy (Sept 2025) | 56.5 hours</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-name">Python Programming & Pandas Data Manipulation</span> —
+            <span class="cert-issuer">Kaggle (Aug 2024)</span>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="no-break">
+    <h2>Education</h2>
+
+    <div class="education-item">
+        <div class="edu-degree">University Studies — Art History</div>
+        <div class="edu-school">Comenius University, Faculty of Philosophy | Bratislava, Slovakia</div>
+        <div class="edu-date">2011 – 2016 | 5 years</div>
+        <ul>
+            <li>Developed strong analytical, research, and written communication skills through comprehensive cultural studies</li>
+            <li>Gained expertise in critical thinking, attention to detail, and systematic documentation—skills directly applicable to compliance auditing</li>
+        </ul>
+    </div>
+</section>
+
+<!-- LANGUAGES -->
+<section class="no-break">
+    <h2>Languages</h2>
+    <div class="languages">
+        <div class="lang-item"><strong>Slovak:</strong> Native</div>
+        <div class="lang-item"><strong>English:</strong> B1 (Good working)</div>
+        <div class="lang-item"><strong>German:</strong> B2 (Professional)</div>
+    </div>
+</section>
+
+<!-- ADDITIONAL INFO -->
+<section class="no-break">
+    <h2>Additional Information</h2>
+    <ul>
+        <li><strong>Work Authorization:</strong> EU Resident — No work permit required for EU positions</li>
+        <li><strong>Mobility:</strong> Open to opportunities across European Union; remote work experienced</li>
+        <li><strong>Availability:</strong> Immediate</li>
+        <li><strong>Driving License:</strong> Category B</li>
+    </ul>
+</section>
+
+</body>
+</html>
